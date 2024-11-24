@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyStore.Wb.Models;
+using MyStore.Data;
+using MyStore.Models.Models;
+using MyStore.Models.Repositories;
 
 namespace MyStore.Wb.Controllers
 {
 	public class CategoryController : Controller
 	{
-		private readonly ApplicationDbContext context;
-
-		public CategoryController(ApplicationDbContext context)
+        private IUnitOfWork _unitOfWork;
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-			this.context = context;
-		}
+            _unitOfWork = unitOfWork;
+        }
         public IActionResult Index()
 		{
-			var result = context.Category.ToList();
+			var result = _unitOfWork.Category.GetAll();
 			return View(result);
 		}
 		[HttpGet]
@@ -27,8 +28,8 @@ namespace MyStore.Wb.Controllers
         {
 			if (ModelState.IsValid)
 			{
-                context.Category.Add(category);
-                context.SaveChanges();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Complete();
                 TempData["Create"] = "Item has Created Successfully";
                 return RedirectToAction("Index");
             }
@@ -42,7 +43,7 @@ namespace MyStore.Wb.Controllers
             {
                 NotFound();
             }
-            var categoryId = context.Category.Find(id);
+            var categoryId = _unitOfWork.Category.GetFirstorDefault(x=>x.Id==id);
             
             return View(categoryId);
         }
@@ -52,8 +53,8 @@ namespace MyStore.Wb.Controllers
         {
             if (ModelState.IsValid)
             {
-                context.Category.Update(category);
-                context.SaveChanges();
+                _unitOfWork.Category.Update(category);
+                _unitOfWork.Complete();
                 TempData["Update"] = "Item has Updated Successfully";
                 return RedirectToAction("Index");
             }
@@ -67,19 +68,19 @@ namespace MyStore.Wb.Controllers
             {
                 NotFound();
             }
-            var categoryId = context.Category.Find(id);
+            var categoryId = _unitOfWork.Category.GetFirstorDefault(x => x.Id == id);
             return View(categoryId);
         }
         [HttpPost]
         public IActionResult DeleteCategory(int? id)
         {
             
-            var categoryId = context.Category.Find(id);
+            var categoryId = _unitOfWork.Category.GetFirstorDefault(x => x.Id == id);
             if(categoryId == null){
                 NotFound();
             }
-           context.Category.Remove(categoryId);
-            context.SaveChanges();
+            _unitOfWork.Category.Remove(categoryId);
+            _unitOfWork.Complete();
             TempData["Delete"] = "Item has Deleted Successfully";
             return RedirectToAction("Index");
         }

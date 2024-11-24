@@ -1,4 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using MyStore.Data;
+using MyStore.Data.Impelementaion;
+using MyStore.Models.Repositories;
 
 namespace MyStore.Wb
 {
@@ -13,7 +16,8 @@ namespace MyStore.Wb
 			builder.Services.AddDbContext<ApplicationDbContext>(
 	 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 			builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-			var app = builder.Build();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())

@@ -9,7 +9,7 @@ using MyStore.Wb;
 
 #nullable disable
 
-namespace MyStore.Wb.Migrations
+namespace MyStore.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20241123210858_first")]

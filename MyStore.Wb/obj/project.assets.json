@@ -1367,7 +1367,7 @@
           "Mono.TextTemplating": "2.2.1"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
             "related": ".xml"
           }
         },
@@ -1963,7 +1963,7 @@
           "System.CodeDom": "4.4.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
@@ -2345,7 +2345,7 @@
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/_._": {
+          "ref/netstandard2.0/System.CodeDom.dll": {
             "related": ".xml"
           }
         },
@@ -3914,6 +3914,32 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
+        }
+      },
+      "MyStore.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.20",
+          "MyStore.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyStore.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyStore.Data.dll": {}
+        }
+      },
+      "MyStore.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MyStore.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyStore.Models.dll": {}
         }
       }
     }
@@ -11350,6 +11376,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MyStore.Data/1.0.0": {
+      "type": "project",
+      "path": "../MyStore.Data/MyStore.Data.csproj",
+      "msbuildProject": "../MyStore.Data/MyStore.Data.csproj"
+    },
+    "MyStore.Models/1.0.0": {
+      "type": "project",
+      "path": "../MyStore.Models/MyStore.Models.csproj",
+      "msbuildProject": "../MyStore.Models/MyStore.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -11358,7 +11394,8 @@
       "Microsoft.EntityFrameworkCore >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.20",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12",
+      "MyStore.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11388,7 +11425,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Data\\MyStore.Data.csproj": {
+              "projectPath": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Data\\MyStore.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

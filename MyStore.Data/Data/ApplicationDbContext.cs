@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyStore.Wb.Models;
+using MyStore.Models.Models;
 
-namespace MyStore.Wb
+namespace MyStore.Data
 {
 	public class ApplicationDbContext:DbContext
 	{
