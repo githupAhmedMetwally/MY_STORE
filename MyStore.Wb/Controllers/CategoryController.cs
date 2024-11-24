@@ -29,9 +29,11 @@ namespace MyStore.Wb.Controllers
 			{
                 context.Category.Add(category);
                 context.SaveChanges();
+                TempData["Create"] = "Item has Created Successfully";
                 return RedirectToAction("Index");
             }
-			return View(category);
+            
+            return View(category);
         }
         [HttpGet]
         public IActionResult Edit(int? id)
@@ -41,6 +43,7 @@ namespace MyStore.Wb.Controllers
                 NotFound();
             }
             var categoryId = context.Category.Find(id);
+            
             return View(categoryId);
         }
         [HttpPost]
@@ -51,8 +54,10 @@ namespace MyStore.Wb.Controllers
             {
                 context.Category.Update(category);
                 context.SaveChanges();
+                TempData["Update"] = "Item has Updated Successfully";
                 return RedirectToAction("Index");
             }
+            
             return View(category);
         }
         [HttpGet]
@@ -75,6 +80,7 @@ namespace MyStore.Wb.Controllers
             }
            context.Category.Remove(categoryId);
             context.SaveChanges();
+            TempData["Delete"] = "Item has Deleted Successfully";
             return RedirectToAction("Index");
         }
     }
