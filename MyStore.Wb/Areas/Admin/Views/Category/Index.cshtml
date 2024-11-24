@@ -5,13 +5,14 @@
     Layout = "~/Views/Shared/_DashBoard.cshtml";
 }
  
-<a class="btn btn-primary" href="/Category/Create">Create</a>
+<a class="btn btn-primary" href="/Admin/Category/Create">Create</a>
 <br />
 <table class="table table-hover" width="100%">
     <tr>
         <th>Name</th>
         <th>Description</th>
         <th>CreatedTime</th>
+        <th>Actions</th>
     </tr>
     @foreach(var item in Model)
     {
@@ -20,8 +21,8 @@
             <td>@item.Description</td>
             <td>@item.CreatedTime</td>
             <td>
-                <a class="btn btn-success" href="/Category/Edit/@item.Id">Edit</a>
-                <a class="btn btn-danger" href="/Category/Delete/@item.Id">Delete</a>
+                <a class="btn btn-success" href="/Admin/Category/Edit/@item.Id">Edit</a>
+                <a class="btn btn-danger" href="/Admin/Category/Delete/@item.Id">Delete</a>
             </td>
         </tr>
     }

@@ -556,3 +556,5 @@ C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\MyStore.Data.dl
 C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\MyStore.Models.dll
 C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\MyStore.Data.pdb
 C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\MyStore.Models.pdb
+C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Wb\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

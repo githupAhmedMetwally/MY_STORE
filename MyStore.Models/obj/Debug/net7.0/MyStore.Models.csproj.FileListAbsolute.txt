@@ -10,3 +10,4 @@ C:\Users\haliem\source\repos\MyStore\MyStore.Models\obj\Debug\net7.0\MyStore.Mod
 C:\Users\haliem\source\repos\MyStore\MyStore.Models\obj\Debug\net7.0\refint\MyStore.Models.dll
 C:\Users\haliem\source\repos\MyStore\MyStore.Models\obj\Debug\net7.0\MyStore.Models.pdb
 C:\Users\haliem\source\repos\MyStore\MyStore.Models\obj\Debug\net7.0\ref\MyStore.Models.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Models\obj\Debug\net7.0\MyStore.Models.csproj.AssemblyReference.cache

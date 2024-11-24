@@ -3,48 +3,49 @@ using MyStore.Data;
 using MyStore.Models.Models;
 using MyStore.Models.Repositories;
 
-namespace MyStore.Wb.Controllers
+namespace MyStore.Wb.Areas.Admin.Controllers
 {
-	public class CategoryController : Controller
-	{
+    [Area("Admin")]
+    public class CategoryController : Controller
+    {
         private IUnitOfWork _unitOfWork;
         public CategoryController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
-		{
-			var result = _unitOfWork.Category.GetAll();
-			return View(result);
-		}
-		[HttpGet]
+        {
+            var result = _unitOfWork.Category.GetAll();
+            return View(result);
+        }
+        [HttpGet]
         public IActionResult Create()
         {
-			return View();
+            return View();
         }
         [HttpPost]
-		[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Category category)
         {
-			if (ModelState.IsValid)
-			{
+            if (ModelState.IsValid)
+            {
                 _unitOfWork.Category.Add(category);
                 _unitOfWork.Complete();
                 TempData["Create"] = "Item has Created Successfully";
                 return RedirectToAction("Index");
             }
-            
+
             return View(category);
         }
         [HttpGet]
         public IActionResult Edit(int? id)
         {
-            if(id==null || id == 0)
+            if (id == null || id == 0)
             {
                 NotFound();
             }
-            var categoryId = _unitOfWork.Category.GetFirstorDefault(x=>x.Id==id);
-            
+            var categoryId = _unitOfWork.Category.GetFirstorDefault(x => x.Id == id);
+
             return View(categoryId);
         }
         [HttpPost]
@@ -58,7 +59,7 @@ namespace MyStore.Wb.Controllers
                 TempData["Update"] = "Item has Updated Successfully";
                 return RedirectToAction("Index");
             }
-            
+
             return View(category);
         }
         [HttpGet]
@@ -74,9 +75,10 @@ namespace MyStore.Wb.Controllers
         [HttpPost]
         public IActionResult DeleteCategory(int? id)
         {
-            
+
             var categoryId = _unitOfWork.Category.GetFirstorDefault(x => x.Id == id);
-            if(categoryId == null){
+            if (categoryId == null)
+            {
                 NotFound();
             }
             _unitOfWork.Category.Remove(categoryId);
