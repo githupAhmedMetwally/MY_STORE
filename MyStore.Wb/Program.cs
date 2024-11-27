@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using MyStore.Data;
 using MyStore.Data.Impelementaion;
 using MyStore.Models.Repositories;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using MyStore.Utilities;
 
 namespace MyStore.Wb
 {
@@ -13,10 +16,19 @@ namespace MyStore.Wb
 
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
-			builder.Services.AddDbContext<ApplicationDbContext>(
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+            //builder.Services.AddRazorPages();
+            builder.Services.AddDbContext<ApplicationDbContext>(
 	 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-			builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
+   builder.Services.AddIdentity<IdentityUser,IdentityRole>
+				(option=>option.Lockout.DefaultLockoutTimeSpan=TimeSpan.FromHours(4))
+				.AddDefaultTokenProviders().AddDefaultUI()
+				.AddEntityFrameworkStores<ApplicationDbContext>();
+			
+            
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+			builder.Services.AddSingleton<IEmailSender, EmailSender>();
             var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -29,12 +41,16 @@ namespace MyStore.Wb
 			app.UseRouting();
 
 			app.UseAuthorization();
-
-			app.MapControllerRoute(
+            app.MapRazorPages();
+            app.MapControllerRoute(
 				name: "default",
 				pattern: "{area=Admin}/{controller=Category}/{action=Index}/{id?}");
 
-			app.Run();
+            app.MapControllerRoute(
+                name: "Customer",
+                pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
 		}
 	}
 }

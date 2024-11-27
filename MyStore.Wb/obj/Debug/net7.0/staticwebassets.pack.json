@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\MyStore.Wb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\05d251ea-9d52-47a6-ae00-932e2637c344.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\05d251ea-9d52-47a6-ae00-932e2637c344.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\34d3f166-74da-4700-8798-3270f76bc2fe.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\34d3f166-74da-4700-8798-3270f76bc2fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\65a3f3e9-f52f-4562-b7a9-264c52e1457a.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\65a3f3e9-f52f-4562-b7a9-264c52e1457a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\66368418-98c6-4960-b4cf-dbdab9e2a993.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\66368418-98c6-4960-b4cf-dbdab9e2a993.jpg"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\77cc971d-c791-4f4f-a492-eff662764de4.jpg",
       "PackagePath": "staticwebassets\\Images\\Product\\77cc971d-c791-4f4f-a492-eff662764de4.jpg"
     },
@@ -17,6 +33,14 @@
       "PackagePath": "staticwebassets\\Images\\Product\\7ccc318b-6efa-4855-bbc7-a41b4a66652d.jpg"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\ab467179-3899-403c-9f75-a943b51ec6b7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\ab467179-3899-403c-9f75-a943b51ec6b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\c4fd32c5-7137-48f6-a546-cd7de6686836.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c4fd32c5-7137-48f6-a546-cd7de6686836.jpg"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\d74a23de-5265-4c99-8c52-c0ce88e5e2b3.jpg",
       "PackagePath": "staticwebassets\\Images\\Product\\d74a23de-5265-4c99-8c52-c0ce88e5e2b3.jpg"
     },
@@ -25,8 +49,8 @@
       "PackagePath": "staticwebassets\\Images\\Product\\e99e1504-f64a-4692-bdb9-bb25b32f689f.jpg"
     },
     {
-      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\f69d9d33-d956-4f3d-905f-f9edc23dad01.jpg",
-      "PackagePath": "staticwebassets\\Images\\Product\\f69d9d33-d956-4f3d-905f-f9edc23dad01.jpg"
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\fc7c69b7-bdce-4a8d-b056-855d9f38faa4.png",
+      "PackagePath": "staticwebassets\\Images\\Product\\fc7c69b7-bdce-4a8d-b056-855d9f38faa4.png"
     },
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\adminlte.css",
@@ -143,6 +167,18 @@
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\customer\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\customer\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\customer\\css\\styles.css",
+      "PackagePath": "staticwebassets\\customer\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\customer\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\customer\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\favicon.ico",

@@ -1,0 +1,13 @@
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\bin\Debug\net7.0\MyStore.Utilities.deps.json
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\bin\Debug\net7.0\MyStore.Utilities.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\bin\Debug\net7.0\MyStore.Utilities.pdb
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.AssemblyInfoInputs.cache
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.AssemblyInfo.cs
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.sourcelink.json
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\refint\MyStore.Utilities.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.pdb
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\ref\MyStore.Utilities.dll
+C:\Users\haliem\source\repos\MyStore\MyStore.Utilities\obj\Debug\net7.0\MyStore.Utilities.csproj.AssemblyReference.cache
