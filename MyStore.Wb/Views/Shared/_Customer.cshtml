@@ -37,16 +37,15 @@
                       
                 </ul>
                 <partial name="_LoginPartial" />
-               @*  @if (User.Identity.IsAuthenticated)
-                {
+                
                     <form class="d-flex">
                         <a href="/Customer/Cart/Index" class="btn btn-outline-dark">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
-                            @await Component.InvokeAsync("ShoppingCart")
+                           
                         </a>
                     </form>
-                } *@
+                
 
             </div>
         </div>

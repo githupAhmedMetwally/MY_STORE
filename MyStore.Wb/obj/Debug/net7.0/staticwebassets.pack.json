@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\Images\\Product\\05d251ea-9d52-47a6-ae00-932e2637c344.jpg"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\23f78c45-6c5e-4c95-a89f-a892c7fc53bb.png",
+      "PackagePath": "staticwebassets\\Images\\Product\\23f78c45-6c5e-4c95-a89f-a892c7fc53bb.png"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\34d3f166-74da-4700-8798-3270f76bc2fe.jpg",
       "PackagePath": "staticwebassets\\Images\\Product\\34d3f166-74da-4700-8798-3270f76bc2fe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\3b656cab-0bd2-4f93-80ee-505c45f8803c.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\3b656cab-0bd2-4f93-80ee-505c45f8803c.jpg"
     },
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\65a3f3e9-f52f-4562-b7a9-264c52e1457a.jpg",
@@ -43,6 +51,14 @@
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\d74a23de-5265-4c99-8c52-c0ce88e5e2b3.jpg",
       "PackagePath": "staticwebassets\\Images\\Product\\d74a23de-5265-4c99-8c52-c0ce88e5e2b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\d98ee3b9-b9e9-42c1-9de3-dd40695a8d0b.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\d98ee3b9-b9e9-42c1-9de3-dd40695a8d0b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\dc29d88d-e79e-4e5b-a6cc-8501a66e5752.png",
+      "PackagePath": "staticwebassets\\Images\\Product\\dc29d88d-e79e-4e5b-a6cc-8501a66e5752.png"
     },
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\Images\\Product\\e99e1504-f64a-4692-bdb9-bb25b32f689f.jpg",
@@ -911,6 +927,14 @@
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\plugins\\jquery\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\shoppingcart\\index.html",
+      "PackagePath": "staticwebassets\\shoppingcart\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\shoppingcart\\style.css",
+      "PackagePath": "staticwebassets\\shoppingcart\\style.css"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MyStore.Wb.Microsoft.AspNetCore.StaticWebAssets.props",
