@@ -5,6 +5,7 @@ using MyStore.Models.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MyStore.Utilities;
+using Stripe;
 
 namespace MyStore.Wb
 {
@@ -20,7 +21,7 @@ namespace MyStore.Wb
             //builder.Services.AddRazorPages();
             builder.Services.AddDbContext<ApplicationDbContext>(
 	 options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+			builder.Services.Configure<StripeData>(builder.Configuration.GetSection("Stripe"));
    builder.Services.AddIdentity<IdentityUser,IdentityRole>
 				(option=>option.Lockout.DefaultLockoutTimeSpan=TimeSpan.FromHours(4))
 				.AddDefaultTokenProviders().AddDefaultUI()
@@ -39,8 +40,8 @@ namespace MyStore.Wb
 			app.UseStaticFiles();
 
 			app.UseRouting();
-
-			app.UseAuthorization();
+            StripeConfiguration.ApiKey = builder.Configuration.GetSection("stripe:Secretkey").Get<string>();
+            app.UseAuthorization();
             app.MapRazorPages();
             app.MapControllerRoute(
 				name: "default",

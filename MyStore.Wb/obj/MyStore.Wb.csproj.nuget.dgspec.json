@@ -307,6 +307,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.1.0, )"
             }
           },
           "imports": [

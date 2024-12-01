@@ -1,4 +1,5 @@
-﻿using MyStore.Models.Repositories;
+﻿using MyStore.Models.Models;
+using MyStore.Models.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,18 @@ namespace MyStore.Data.Impelementaion
         public ICategoryRepository Category { get; private set; }
         public IProductRepository Product { get; private set; }
         public IShoppingCartRepository ShoppingCart { get; private set; }
+        public IOrderHeaderRepository OrderHeader { get; private set; }
+        public IOrderDetailsRepository OrderDetails { get; private set; }
+        public IApplicationUserRepository ApplicationUser { get; private set; }
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
             Category = new CategoryRepository(context);
             Product = new ProductRepository(context);
             ShoppingCart = new ShoppingCartRepository(context);
+            OrderHeader = new OrderHeaderRepository(context);
+            OrderDetails = new OrderDetailsRepository(context);
+            ApplicationUser = new ApplicationUserRepository(context);
         }
  
         public int Complete()

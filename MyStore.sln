@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStore.Data", "MyStore.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStore.Models", "MyStore.Models\MyStore.Models.csproj", "{C9253FB4-E300-4C63-A1B8-54F8540B3E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyStore.Utilities", "MyStore.Utilities\MyStore.Utilities.csproj", "{246FEA11-037E-4229-B0EA-814424F4EF42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStore.Utilities", "MyStore.Utilities\MyStore.Utilities.csproj", "{246FEA11-037E-4229-B0EA-814424F4EF42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

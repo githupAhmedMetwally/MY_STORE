@@ -185,6 +185,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\summary.css",
+      "PackagePath": "staticwebassets\\css\\summary.css"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\customer\\assets\\favicon.ico",
       "PackagePath": "staticwebassets\\customer\\assets\\favicon.ico"
     },
@@ -355,6 +359,10 @@
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\js\\demo.js",
       "PackagePath": "staticwebassets\\js\\demo.js"
+    },
+    {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
     },
     {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\js\\pages\\dashboard.js",

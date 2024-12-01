@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TMBF2Ko5/FdGaWleO6u6rkZZZELITD2JTOetDrZqCFU=",
+  "Hash": "WtX/Nx9NliRpUl8Z1LvG3GN5zOCDxA5Jin1R6LAx9r8=",
   "Source": "MyStore.Wb",
   "BasePath": "_content/MyStore.Wb",
   "Mode": "Default",
@@ -1746,6 +1746,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\summary.css",
+      "SourceId": "MyStore.Wb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\",
+      "BasePath": "_content/MyStore.Wb",
+      "RelativePath": "css/summary.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\summary.css"
+    },
+    {
       "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\customer\\assets\\favicon.ico",
       "SourceId": "MyStore.Wb",
       "SourceType": "Discovered",
@@ -2865,6 +2884,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\js\\order.js",
+      "SourceId": "MyStore.Wb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\",
+      "BasePath": "_content/MyStore.Wb",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\js\\pages\\dashboard.js",

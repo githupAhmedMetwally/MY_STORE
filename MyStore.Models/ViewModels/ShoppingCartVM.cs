@@ -11,5 +11,6 @@ namespace MyStore.Models.ViewModels
     {
         public IEnumerable<ShoppingCart> CartList { get; set; }
         public decimal TotalCarts { get; set; }
+        public OrderHeader OrderHeader { get; set; }
     }
 }
