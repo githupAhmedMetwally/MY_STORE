@@ -46,6 +46,7 @@
           "MyStore.Data": "1.0.0",
           "MyStore.Utilities": "1.0.0",
           "Stripe.net": "47.1.0",
+          "X.PagedList.Mvc.Core": "7.9.1",
           "Microsoft.AspNetCore.Antiforgery.Reference": "7.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "7.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "7.0.0.0",
@@ -1100,7 +1101,7 @@
           "Microsoft.Net.Http.Headers": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
           "Microsoft.AspNetCore.Authorization.Policy": "2.2.0",
@@ -1121,7 +1122,7 @@
       },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Localization": "2.2.0",
           "System.ComponentModel.Annotations": "4.5.0"
         }
@@ -1129,7 +1130,7 @@
       "Microsoft.AspNetCore.Mvc.Formatters.Json/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         }
       },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
@@ -1168,7 +1169,7 @@
           "Microsoft.AspNetCore.Antiforgery": "2.2.0",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.2.0",
           "Microsoft.Extensions.WebEncoders": "2.2.0",
@@ -3633,6 +3634,48 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "X.PagedList/7.9.0": {
+        "runtime": {
+          "lib/netstandard2.0/X.PagedList.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/X.PagedList.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Core/7.9.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "X.PagedList": "7.9.0",
+          "X.PagedList.Web.Common": "7.9.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/X.PagedList.Mvc.Core.dll": {
+            "assemblyVersion": "7.9.1.0",
+            "fileVersion": "7.9.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/X.PagedList.Mvc.Core.dll": {}
+        }
+      },
+      "X.PagedList.Web.Common/7.9.1": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/X.PagedList.Web.Common.dll": {
+            "assemblyVersion": "7.9.1.0",
+            "fileVersion": "7.9.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/X.PagedList.Web.Common.dll": {}
+        }
+      },
       "MyStore.Data/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.20",
@@ -5936,12 +5979,12 @@
       "path": "microsoft.aspnetcore.mvc.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
-      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512"
+      "sha512": "sha512-/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
       "type": "package",
@@ -7363,6 +7406,27 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "X.PagedList/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y5cpcQnPVu3JDEiZVcG3yeSDx7Xz9N9Ok6AXqH/CLHTLJK+2ekaUz1rU9Gkuo/t9PhFO8RUx8BQI/AlZm6338g==",
+      "path": "x.pagedlist/7.9.0",
+      "hashPath": "x.pagedlist.7.9.0.nupkg.sha512"
+    },
+    "X.PagedList.Mvc.Core/7.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kCYB2n+tAV1AunOrwNE+2//6KI55hPG9c2tIvEA5kvm6YE+qyhttAR3jfaSmcNE0B9CSKUq7H3owyAyyYnMvvg==",
+      "path": "x.pagedlist.mvc.core/7.9.1",
+      "hashPath": "x.pagedlist.mvc.core.7.9.1.nupkg.sha512"
+    },
+    "X.PagedList.Web.Common/7.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u4kP6vKaCyfth/H+famPBfwliZp8t6g/BdG6tB4ZYUOZISNCTcvUJfXkoXQeGeLnFe3DkiqgHc0NE24++sPSTg==",
+      "path": "x.pagedlist.web.common/7.9.1",
+      "hashPath": "x.pagedlist.web.common.7.9.1.nupkg.sha512"
     },
     "MyStore.Data/1.0.0": {
       "type": "project",

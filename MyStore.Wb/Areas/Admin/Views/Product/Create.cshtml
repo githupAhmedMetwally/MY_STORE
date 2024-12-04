@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Product.Img" class="control-label"></label>
-                <input  type="file" name="file" id="imgfile" class="form-control" />
+                <input  type="file" name="file"   class="form-control" onchange="fileImg(event)"/>
             </div>
             <div class="form-group">
                 <label asp-for="Product.CategoryId" class="control-label"></label>
@@ -43,7 +43,7 @@
     </div>
     <div class="col-md-4">
         <div class="container">
-            <img src="~/@Model.Product.Img" width="300" height="300" />
+            <img   id="img" width="300" height="300" />
         </div>
     </div>
 </div>
@@ -56,4 +56,11 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script>
+      var fileImg=function(event){
+          var imgHolder = document.getElementById("img");
+          imgHolder.src = URL.createObjectURL(event.target.files[0]);
+      }
+    </script>
 }

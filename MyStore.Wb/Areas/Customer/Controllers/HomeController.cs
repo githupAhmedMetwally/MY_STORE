@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using MyStore.Models.Models;
 using MyStore.Models.Repositories;
+using MyStore.Utilities;
 using System.Security.Claims;
+using X.PagedList;
 
 namespace MyStore.Wb.Areas.Customer.Controllers
 {
@@ -15,9 +17,11 @@ namespace MyStore.Wb.Areas.Customer.Controllers
         {
             this.unitOfWork = unitOfWork;
         }
-        public IActionResult Index()
+        public IActionResult Index(int ? page)
         {
-            var result = unitOfWork.Product.GetAll();
+            var pageNumber = page ?? 1;
+            int pageSize = 8;
+            var result = unitOfWork.Product.GetAll().ToPagedList(pageNumber,pageSize);
             return View(result);
         }
         [HttpGet]
@@ -47,13 +51,18 @@ namespace MyStore.Wb.Areas.Customer.Controllers
             if (cartobj == null)
             {
                 unitOfWork.ShoppingCart.Add(shoppingCart);
+                unitOfWork.Complete();
+                HttpContext.Session.SetInt32(SD.SessionKey,
+                    unitOfWork.ShoppingCart.GetAll(x => x.ApplicationUserId == claim.Value).ToList().Count());
+     
             }
             else
             {
                 unitOfWork.ShoppingCart.IncreaseCount(cartobj, shoppingCart.Count);
+                unitOfWork.Complete();
             }
             
-            unitOfWork.Complete();
+            
 
             return RedirectToAction("Index");
         }

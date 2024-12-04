@@ -30,6 +30,10 @@ namespace MyStore.Wb
             
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 			builder.Services.AddSingleton<IEmailSender, EmailSender>();
+
+			builder.Services.AddDistributedMemoryCache();
+			builder.Services.AddSession();
+
             var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -42,10 +46,11 @@ namespace MyStore.Wb
 			app.UseRouting();
             StripeConfiguration.ApiKey = builder.Configuration.GetSection("stripe:Secretkey").Get<string>();
             app.UseAuthorization();
+			app.UseSession();
             app.MapRazorPages();
             app.MapControllerRoute(
 				name: "default",
-				pattern: "{area=Admin}/{controller=Category}/{action=Index}/{id?}");
+				pattern: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
 
             app.MapControllerRoute(
                 name: "Customer",

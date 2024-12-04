@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1AfGwi7Iu9g=",
+  "dgSpecHash": "tLsQF4tACwM=",
   "success": true,
   "projectFilePath": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\MyStore.Wb.csproj",
   "expectedPackageFiles": [
@@ -77,7 +77,7 @@
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.20\\microsoft.aspnetcore.identity.ui.7.0.20.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.2.0\\microsoft.aspnetcore.jsonpatch.2.2.0.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.0\\microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.dataannotations\\2.2.0\\microsoft.aspnetcore.mvc.dataannotations.2.2.0.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.formatters.json\\2.2.0\\microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
@@ -280,7 +280,10 @@
     "C:\\Users\\haliem\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
     "C:\\Users\\haliem\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\haliem\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\haliem\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\haliem\\.nuget\\packages\\x.pagedlist\\7.9.0\\x.pagedlist.7.9.0.nupkg.sha512",
+    "C:\\Users\\haliem\\.nuget\\packages\\x.pagedlist.mvc.core\\7.9.1\\x.pagedlist.mvc.core.7.9.1.nupkg.sha512",
+    "C:\\Users\\haliem\\.nuget\\packages\\x.pagedlist.web.common\\7.9.1\\x.pagedlist.web.common.7.9.1.nupkg.sha512"
   ],
   "logs": []
 }

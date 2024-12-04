@@ -49,8 +49,8 @@ namespace MyStore.Wb.Areas.Customer.Controllers
             if (shoppingcart.Count <= 1)
             {
                 unitOfWork.ShoppingCart.Remove(shoppingcart);
-                unitOfWork.Complete();
-                return RedirectToAction("Index", "Home");
+                var count = unitOfWork.ShoppingCart.GetAll(x => x.ApplicationUserId == shoppingcart.ApplicationUserId).ToList().Count() - 1;
+                HttpContext.Session.SetInt32(SD.SessionKey, count);
             }
             else
             {
@@ -65,7 +65,9 @@ namespace MyStore.Wb.Areas.Customer.Controllers
 			var shoppingcart = unitOfWork.ShoppingCart.GetFirstorDefault(x => x.Id == cartId);
 			unitOfWork.ShoppingCart.Remove(shoppingcart);
 			unitOfWork.Complete();
-			return RedirectToAction("Index");
+            var count = unitOfWork.ShoppingCart.GetAll(x => x.ApplicationUserId == shoppingcart.ApplicationUserId).ToList().Count();
+            HttpContext.Session.SetInt32(SD.SessionKey, count);
+            return RedirectToAction("Index");
 		}
 
 
