@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AkVM6tiw0KqwdzFuPLE8GVqkLz/Npzo+19bfH3HvYZc=",
+  "Hash": "DbRDJDk+oA9G29nvEgh55/rqJUXEJjWkmZEAL1RPsMg=",
   "Source": "MyStore.Wb",
   "BasePath": "_content/MyStore.Wb",
   "Mode": "Default",
@@ -2751,6 +2751,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\boxed-bg.png"
+    },
+    {
+      "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\img\\confirm.jpg",
+      "SourceId": "MyStore.Wb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\",
+      "BasePath": "_content/MyStore.Wb",
+      "RelativePath": "img/confirm.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\confirm.jpg"
     },
     {
       "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\img\\credit\\american-express.png",

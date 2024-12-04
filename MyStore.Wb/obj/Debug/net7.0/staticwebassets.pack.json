@@ -333,6 +333,10 @@
       "PackagePath": "staticwebassets\\img\\boxed-bg.png"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\img\\confirm.jpg",
+      "PackagePath": "staticwebassets\\img\\confirm.jpg"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\img\\credit\\american-express.png",
       "PackagePath": "staticwebassets\\img\\credit\\american-express.png"
     },
