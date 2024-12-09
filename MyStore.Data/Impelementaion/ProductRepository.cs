@@ -1,4 +1,5 @@
-﻿using MyStore.Models.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using MyStore.Models.Models;
 using MyStore.Models.Repositories;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,24 @@ namespace MyStore.Data.Impelementaion
                 productId.Img=product.Img;
                 productId.CategoryId=product.CategoryId;
             }
+        }
+        public List<Product> Search(string temp)
+        {
+            //To Join Brand Table    To Search by name of product        or name of category
+            var result = context.Products.Include(e => e.Category).Where(e => e.Name.Contains(temp)||e.Category.Name.Contains(temp)).ToList();
+            return result;
+
+        }
+
+        public List<Product> GetAllWithOrderByAsc()
+        {
+            var result = context.Products.OrderBy(e => e.Price).ToList();
+            return result;
+        }
+        public List<Product> GetAllWithOrderByDesc()
+        {
+            var result = context.Products.OrderByDescending(e => e.Price).ToList();
+            return result;
         }
     }
 }

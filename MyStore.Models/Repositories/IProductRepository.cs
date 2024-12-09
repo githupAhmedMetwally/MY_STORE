@@ -10,5 +10,8 @@ namespace MyStore.Models.Repositories
     public interface IProductRepository:IGenericRepository<Product>
     {
         void Update(Product product);
+        public List<Product> GetAllWithOrderByAsc();
+        public List<Product> GetAllWithOrderByDesc();
+        public List<Product> Search(string temp);
     }
 }

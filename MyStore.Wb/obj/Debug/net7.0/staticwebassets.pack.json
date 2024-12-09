@@ -277,6 +277,10 @@
       "PackagePath": "staticwebassets\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
+      "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\productIndex.css",
+      "PackagePath": "staticwebassets\\css\\productIndex.css"
+    },
+    {
       "Id": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

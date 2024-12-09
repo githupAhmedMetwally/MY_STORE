@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DbRDJDk+oA9G29nvEgh55/rqJUXEJjWkmZEAL1RPsMg=",
+  "Hash": "qwN2ZarXllt4qrFUxwv0vi3hleqLPzLf3OG7Xhu1rOE=",
   "Source": "MyStore.Wb",
   "BasePath": "_content/MyStore.Wb",
   "Mode": "Default",
@@ -1725,6 +1725,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\alt\\adminlte.plugins.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\productIndex.css",
+      "SourceId": "MyStore.Wb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\",
+      "BasePath": "_content/MyStore.Wb",
+      "RelativePath": "css/productIndex.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\productIndex.css"
     },
     {
       "Identity": "C:\\Users\\haliem\\source\\repos\\MyStore\\MyStore.Wb\\wwwroot\\css\\site.css",

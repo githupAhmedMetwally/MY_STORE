@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyStore.Models.Models;
 using MyStore.Models.Repositories;
 using MyStore.Utilities;
+using System.Drawing.Printing;
 using System.Security.Claims;
 using X.PagedList;
 
@@ -22,6 +23,7 @@ namespace MyStore.Wb.Areas.Customer.Controllers
             var pageNumber = page ?? 1;
             int pageSize = 8;
             var result = unitOfWork.Product.GetAll().ToPagedList(pageNumber,pageSize);
+
             return View(result);
         }
         [HttpGet]
@@ -65,6 +67,35 @@ namespace MyStore.Wb.Areas.Customer.Controllers
             
 
             return RedirectToAction("Index");
+        }
+        public IActionResult Search(string temp,int? page)
+        {
+            var pageNumber = page ?? 1;
+            int pageSize = 8;
+            var result = unitOfWork.Product.Search(temp).ToPagedList(pageNumber, pageSize);
+            if (result != null)
+            {
+                return View("Index", result);
+            }
+            else
+            {
+                TempData["NotFound"] = "Not Found";
+                return RedirectToAction("Index",result);
+            }
+        }
+        public IActionResult OrderByAsc(int? page)
+        {
+            var pageNumber = page ?? 1;
+            int pageSize = 8;
+            var result = unitOfWork.Product.GetAllWithOrderByAsc().ToPagedList(pageNumber, pageSize);
+            return View("Index", result);
+        }
+        public IActionResult OrderByDesc(int? page)
+        {
+            var pageNumber = page ?? 1;
+            int pageSize = 8;
+            var result = unitOfWork.Product.GetAllWithOrderByDesc().ToPagedList(pageNumber, pageSize);
+            return View("Index", result);
         }
     }
 }
